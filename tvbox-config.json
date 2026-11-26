@@ -180,17 +180,6 @@
       "group": "🔞18+"
     },
     {
-      "key": "cms_hsckzy_xyz",
-      "name": "🔞黄色仓库",
-      "type": 1,
-      "api": "https://hsckzy.xyz/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "🔞18+"
-    },
-    {
       "key": "cms_www_jingpinx_com",
       "name": "🔞精品资源",
       "type": 1,
@@ -312,10 +301,10 @@
       "group": "影视"
     },
     {
-      "key": "cms_zuidazy_me",
-      "name": "🎬最大点播",
+      "key": "cms_api_zuidapi_com",
+      "name": "🎬最大资源",
       "type": 1,
-      "api": "https://zuidazy.me/api.php/provide/vod",
+      "api": "https://api.zuidapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -323,10 +312,10 @@
       "group": "影视"
     },
     {
-      "key": "cms_api_zuidapi_com",
-      "name": "🎬最大资源",
+      "key": "cms_zuidazy_me",
+      "name": "🎬最大点播",
       "type": 1,
-      "api": "https://api.zuidapi.com/api.php/provide/vod",
+      "api": "https://zuidazy.me/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -569,6 +558,17 @@
       "name": "🎬iKun资源",
       "type": 1,
       "api": "https://ikunzyapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "cms_154_219_117_232_9981",
+      "name": "🎬建安资源",
+      "type": 1,
+      "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,

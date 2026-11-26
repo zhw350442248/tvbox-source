@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-26T03:35:37.944Z",
+  "built_at": "2026-11-26T03:52:22.733Z",
   "sources": [
     {
       "source": "hafrey1",
@@ -51,7 +51,7 @@
       "detail": "https://dbzy.tv",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND caiji.dbzy5.com"
     },
     {
       "key": "mtzy.me",
@@ -59,7 +59,7 @@
       "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
       "detail": "https://mtzy.me",
       "ok": true,
-      "total": 153432,
+      "total": 153437,
       "note": "ok"
     },
     {
@@ -69,7 +69,7 @@
       "detail": "https://wolongzyw.com",
       "ok": false,
       "total": 0,
-      "note": "Unexpected token '<', \"<!-- 34825\"... is not valid JSON"
+      "note": "Unexpected token '<', \"<!-- 61639\"... is not valid JSON"
     },
     {
       "key": "ikunzy.com",
@@ -122,7 +122,7 @@
       "api": "https://jszyapi.com/api.php/provide/vod",
       "detail": "https://jszyapi.com",
       "ok": true,
-      "total": 117656,
+      "total": 117658,
       "note": "ok"
     },
     {
@@ -149,7 +149,7 @@
       "api": "https://bfzyapi.com/api.php/provide/vod",
       "detail": "https://bfzy.tv",
       "ok": true,
-      "total": 173839,
+      "total": 173840,
       "note": "ok"
     },
     {
@@ -158,7 +158,7 @@
       "api": "https://api.zuidapi.com/api.php/provide/vod",
       "detail": "https://zuida.xyz",
       "ok": true,
-      "total": 126272,
+      "total": 126273,
       "note": "ok"
     },
     {
@@ -176,7 +176,7 @@
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
       "detail": "https://xinlangapi.com",
       "ok": true,
-      "total": 119354,
+      "total": 119356,
       "note": "ok"
     },
     {
@@ -194,7 +194,7 @@
       "api": "https://subocaiji.com/api.php/provide/vod",
       "detail": "https://www.subozy.com",
       "ok": true,
-      "total": 119248,
+      "total": 119250,
       "note": "ok"
     },
     {
@@ -203,7 +203,7 @@
       "api": "https://jinyingzy.com/api.php/provide/vod",
       "detail": "https://jinyingzy.com",
       "ok": true,
-      "total": 119309,
+      "total": 119311,
       "note": "ok"
     },
     {
@@ -230,7 +230,7 @@
       "api": "https://api.guangsuapi.com/api.php/provide/vod",
       "detail": "https://api.guangsuapi.com",
       "ok": true,
-      "total": 119323,
+      "total": 119325,
       "note": "ok"
     },
     {
@@ -239,7 +239,7 @@
       "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "detail": "https://www.hongniuzy.com",
       "ok": true,
-      "total": 118730,
+      "total": 118732,
       "note": "ok"
     },
     {
@@ -266,7 +266,7 @@
       "api": "https://hhzyapi.com/api.php/provide/vod",
       "detail": "https://www.haohuazy.com",
       "ok": true,
-      "total": 118414,
+      "total": 118416,
       "note": "ok"
     },
     {
@@ -276,7 +276,7 @@
       "detail": "https://bdzy1.com",
       "ok": false,
       "total": 0,
-      "note": "HTTP 404"
+      "note": "HTTP 403"
     },
     {
       "key": "lovedan.net",
@@ -285,7 +285,7 @@
       "detail": "https://lovedan.net",
       "ok": false,
       "total": 0,
-      "note": "HTTP 404"
+      "note": "HTTP 403"
     },
     {
       "key": "lzizy.net",
@@ -329,7 +329,7 @@
       "api": "https://api.yzzy-api.com/inc/apijson.php",
       "detail": "https://1080zyk4.com",
       "ok": true,
-      "total": 110460,
+      "total": 110461,
       "note": "ok"
     },
     {
@@ -356,7 +356,7 @@
       "api": "https://suoniapi.com/api.php/provide/vod",
       "detail": "https://suonizy.net",
       "ok": true,
-      "total": 149806,
+      "total": 149775,
       "note": "ok"
     },
     {
@@ -410,7 +410,7 @@
       "api": "https://apiyutu.com/api.php/provide/vod",
       "detail": "https://apiyutu.com",
       "ok": true,
-      "total": 228245,
+      "total": 228305,
       "note": "ok"
     },
     {
@@ -428,7 +428,7 @@
       "api": "https://apilsbzy1.com/api.php/provide/vod",
       "detail": "https://apilsbzy1.com",
       "ok": true,
-      "total": 228245,
+      "total": 228305,
       "note": "ok"
     },
     {
@@ -445,9 +445,9 @@
       "name": "🔞黄色仓库",
       "api": "https://hsckzy.xyz/api.php/provide/vod",
       "detail": "https://hsckzy.xyz",
-      "ok": true,
-      "total": 71198,
-      "note": "ok"
+      "ok": false,
+      "total": 0,
+      "note": "HTTP 523"
     },
     {
       "key": "apidanaizi.com",
@@ -491,7 +491,7 @@
       "api": "https://beiyong.slapibf.com/api.php/provide/vod",
       "detail": "https://slapibf.com",
       "ok": true,
-      "total": 265565,
+      "total": 265713,
       "note": "ok"
     },
     {
@@ -536,7 +536,7 @@
       "api": "https://www.heiliaozyapi.com/api.php/provide/vod",
       "detail": "https://heiliaozy.cc",
       "ok": true,
-      "total": 118610,
+      "total": 118630,
       "note": "ok"
     },
     {
@@ -582,7 +582,7 @@
       "detail": "https://www.xxibaozyw.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "read ECONNRESET"
     },
     {
       "key": "xiangjiaozyw.com",
@@ -591,7 +591,7 @@
       "detail": "https://www.xiangjiaozyw.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND www.xiangjiaozyw.com"
     },
     {
       "key": "www.msnii.com",
@@ -627,7 +627,7 @@
       "detail": "https://xingba111.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND jjpz.hafrey.dpdns.org"
     },
     {
       "key": "dadizy11.com",
@@ -672,7 +672,7 @@
       "detail": "https://collect.wolongzyw.com",
       "ok": false,
       "total": 0,
-      "note": "Unexpected token '<', \"<!-- 56915\"... is not valid JSON"
+      "note": "Unexpected token '<', \"<!-- 13485\"... is not valid JSON"
     },
     {
       "key": "zy.sh0o.cn",
@@ -681,16 +681,16 @@
       "detail": "https://zy.sh0o.cn",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND zy.sh0o.cn"
     },
     {
       "key": "jazy",
       "name": "🎬建安资源",
       "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod",
       "detail": "http://154.219.117.232:9981",
-      "ok": false,
-      "total": 0,
-      "note": "bad response"
+      "ok": true,
+      "total": 65574,
+      "note": "ok"
     },
     {
       "key": "91jpzyw.com",
@@ -717,7 +717,7 @@
       "detail": "https://api.bwzym3u8.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "connect ECONNREFUSED 162.209.146.83:443"
     },
     {
       "key": "api.souavzy.vip",
@@ -735,7 +735,7 @@
       "detail": "https://www.yyzywcj.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "socket hang up"
     },
     {
       "key": "api.sexnguon.com",
@@ -744,7 +744,7 @@
       "detail": "https://api.sexnguon.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "connect ECONNREFUSED 23.224.96.242:443"
     },
     {
       "key": "xzytv.com",
@@ -753,7 +753,7 @@
       "detail": "https://xzytv.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND xzybb2.com"
     },
     {
       "key": "zuisezy.com",
@@ -762,7 +762,7 @@
       "detail": "https://zuisezy.com",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND api.zuiseapi.com"
     },
     {
       "key": "siwazyw.tv",
@@ -771,7 +771,7 @@
       "detail": "https://siwazyw.tv",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "connect ECONNREFUSED 23.225.48.69:443"
     },
     {
       "key": "www.yytv4.cc",
@@ -780,7 +780,7 @@
       "detail": "https://www.yytv4.cc",
       "ok": false,
       "total": 0,
-      "note": "bad response"
+      "note": "getaddrinfo ENOTFOUND www.yytv4.cc"
     }
   ]
 }
