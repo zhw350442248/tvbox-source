@@ -113,7 +113,17 @@ try {
   git branch --set-upstream-to="origin/$Branch" 2>$null | Out-Null
   Write-Host "      推送完成: https://github.com/$Repo"
 
-  Write-Host "[5/5] 订阅地址"
+  Write-Host "[5/6] 打开 Actions 写权限（让每日重建能 commit 回仓库）"
+  try {
+    $wf = @{ default_workflow_permissions = 'write' } | ConvertTo-Json
+    Invoke-RestMethod -Uri "https://api.github.com/repos/$Repo/actions/permissions/workflow" -Method Put -Headers $api -Body $wf -ContentType 'application/json' -TimeoutSec 20 | Out-Null
+    Write-Host "      已设置 default_workflow_permissions = write"
+  } catch {
+    $code = $_.Exception.Response.StatusCode.value__
+    Write-Host "      自动设置有失败（HTTP $code），手动开：仓库 Settings -> Actions -> General -> Workflow permissions -> Read and write"
+  }
+
+  Write-Host "[6/6] 订阅地址"
   $raw = "https://raw.githubusercontent.com/$Repo/$Branch"
   Write-Host @"
 
