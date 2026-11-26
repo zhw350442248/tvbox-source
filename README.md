@@ -6,15 +6,15 @@
 
 | 版本 | 地址 |
 |---|---|
-| 可用版（每站实测通过） | `https://raw.githubusercontent.com/GITHUB_USER/tvbox-source/main/tvbox-config.json` |
-| 全量版（不筛活） | `https://raw.githubusercontent.com/GITHUB_USER/tvbox-source/main/tvbox-config-full.json` |
-| 中转版（经 CF Worker） | `https://raw.githubusercontent.com/GITHUB_USER/tvbox-source/main/tvbox-config-proxy.json` |
+| 可用版（每站实测通过） | `https://raw.githubusercontent.com/zhw350442248/tvbox-source/main/tvbox-config.json` |
+| 全量版（不筛活） | `https://raw.githubusercontent.com/zhw350442248/tvbox-source/main/tvbox-config-full.json` |
+| 中转版（经 CF Worker） | `https://raw.githubusercontent.com/zhw350442248/tvbox-source/main/tvbox-config-proxy.json` |
 
 raw.githubusercontent.com 被墙时换加速前缀：
 
 ```
-https://gh-proxy.com/https://raw.githubusercontent.com/GITHUB_USER/tvbox-source/main/tvbox-config.json
-https://cdn.jsdelivr.net/gh/GITHUB_USER/tvbox-source@main/tvbox-config.json
+https://gh-proxy.com/https://raw.githubusercontent.com/zhw350442248/tvbox-source/main/tvbox-config.json
+https://cdn.jsdelivr.net/gh/zhw350442248/tvbox-source@main/tvbox-config.json
 ```
 
 TVBox / 影视仓 / takagen99 / Fongmi：设置 → 配置地址 → 粘贴上面任一 URL。
