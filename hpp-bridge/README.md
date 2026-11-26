@@ -35,10 +35,35 @@ media.resolvePlayback  →  /play  302 到 /proxy
 
 ```bash
 node build.mjs
-# 产出 dist/worker.js (约 222 KB) + dist/tvbox-hpp.json
+# 产出 dist/worker.js (约 223 KB) + dist/worker.mjs + dist/tvbox-hpp.json
 ```
 
-部署：
+### 方式一：本地跑（不用 Cloudflare 账号，最快验证）
+
+```bash
+node serve.mjs
+# 或指定端口
+PORT=8787 node serve.mjs
+```
+
+启动后会打印本机局域网 IP。TVBox / 影视仓的**配置地址**直接填：
+
+```
+http://<本机局域网IP>:8787/config
+```
+
+这一份 config 里 21 个站的 api 会按请求 Host 自动生成，不用手动改。
+自检：浏览器打开 `http://<IP>:8787/plugins` 应返回 21 个插件。
+
+Windows 防火墙拦的话，管理员 PowerShell 执行一次：
+
+```powershell
+New-NetFirewallRule -DisplayName "tvbox-hpp" -Direction Inbound -Protocol TCP -LocalPort 8787 -Action Allow
+```
+
+电视盒子和电脑要在同一局域网，电脑不能休眠。
+
+### 方式二：部署到 Cloudflare
 
 1. CF Dashboard → Workers & Pages → 创建 Worker
 2. 把 `dist/worker.js` 全文粘进编辑器 → Deploy

@@ -119,6 +119,8 @@ const out = [
 
 const outFile = path.join(DIST, 'worker.js');
 fs.writeFileSync(outFile, out, 'utf8');
+// 同一份内容再存 .mjs，方便本地 serve.mjs 直接 import
+fs.writeFileSync(path.join(DIST, 'worker.mjs'), out, 'utf8');
 
 /* ---------- 7. 语法自检 ---------- */
 const check = await import('node:module').then((m) => m).catch(() => null);

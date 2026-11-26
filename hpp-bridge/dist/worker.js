@@ -6315,6 +6315,36 @@ const __worker = {
         })));
       }
 
+      // 整份 TVBox 配置：api 按当前请求的 Host 动态生成，本地 / CF 都能直接用
+      if (path === '/config' || path === '/tvbox-config.json') {
+        const origin = url.origin;
+        const all = Object.entries(PLUGINS).map(([id, p]) => ({
+          key: 'hpp_' + id,
+          name: (p.meta.mature ? '🔞' : '') + p.meta.name,
+          type: 1,
+          api: origin + '/api.php/provide/vod?p=' + id,
+          searchable: 1,
+          quickSearch: 1,
+          filterable: 0,
+          ext: '',
+          group: p.meta.mature ? '🔞18+' : '影视',
+        }));
+        const adult = all.filter((s) => s.group === '🔞18+');
+        const normal = all.filter((s) => s.group !== '🔞18+');
+        return json({
+          spider: '',
+          wallpaper: '',
+          logo: '',
+          sites: [...adult, ...normal],
+          lives: [],
+          rules: [],
+          ads: ['mimg.0c1q0l.cn', 'www.163.com', 'pic1.zhimg.com'],
+          flags: ['youku', 'qq', 'iqiyi', 'qiyi', 'letv', 'sohu', 'mgtv', 'bilibili'],
+          ijk: [{ group: '软解码', options: [{ category: 4, name: 'mediacodec', value: '1' }] }],
+          doh: [{ name: 'AliDNS', url: 'https://dns.alidns.com/dns-query', ips: ['223.5.5.5', '223.6.6.6'] }],
+        });
+      }
+
       if (!/\/api\.php\/provide\/vod$/.test(path)) {
         return json({ code: 0, msg: 'not found', hint: 'use /api.php/provide/vod' }, 404);
       }
