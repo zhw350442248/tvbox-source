@@ -3,8 +3,9 @@
 #   $env:GH_TOKEN='ghp_xxx'; .\push.ps1 -Repo 你的用户名/tvbox-source
 #   .\push.ps1 -Repo 你的用户名/tvbox-source -Token ghp_xxx -Private
 param(
-  [Parameter(Mandatory = $true)][string]$Repo,          # user/repo
+  [Parameter(Mandatory = $true)][string]$Repo,          # user/repo，或只给仓库名（自动补 token 属主）
   [string]$Token = $env:GH_TOKEN,
+  [string]$TokenFile = "$env:USERPROFILE\.gh_token",
   [switch]$Private,
   [switch]$Force,
   [string]$Branch = 'main',
@@ -14,21 +15,26 @@ param(
 $ErrorActionPreference = 'Stop'
 $dir = $PSScriptRoot
 
+if (-not $Token -and $TokenFile -and (Test-Path $TokenFile)) {
+  $Token = ([IO.File]::ReadAllText($TokenFile)).Trim()
+  if ($Token) { Write-Host "      已从 $TokenFile 读取 token" }
+}
+
 if (-not $Token) {
   Write-Host @'
-缺少 token。二选一：
-  1) 环境变量：$env:GH_TOKEN='ghp_xxx'
-  2) 参数：    .\push.ps1 -Repo user/repo -Token ghp_xxx
+缺少 token。三选一：
+  1) 写到 %USERPROFILE%\.gh_token（推荐，token 不进命令行历史）
+  2) 环境变量：$env:GH_TOKEN='ghp_xxx'
+  3) 参数：    .\push.ps1 -Repo repo名 -Token ghp_xxx
 
-token 生成页：https://github.com/settings/tokens
-  classic token      -> 勾 repo（私有仓再勾 workflow）
-  fine-grained token -> 选该仓库 + Contents: Read and write + Workflows: Read and write
+token 生成页：https://github.com/settings/tokens/new
+  Token type 选 classic（fine-grained 不能创建新仓库）
+  Scopes 勾：repo（整组）+ workflow
+  有效期建议 7 天，用完可在同页 Delete
 '@
   exit 2
 }
 
-if ($Repo -notmatch '/') { throw "Repo 必须是 user/repo 形式，当前: $Repo" }
-$owner, $name = $Repo.Split('/', 2)
 $api = @{
   Authorization          = "Bearer $Token"
   Accept                 = 'application/vnd.github+json'
@@ -44,6 +50,8 @@ try {
   throw "token 校验失败 HTTP $code（401=token 无效/过期，403=权限不足或限流）: $($_.Exception.Message)"
 }
 Write-Host "      登录身份: $($me.login)"
+if ($Repo -notmatch '/') { $Repo = "$($me.login)/$Repo"; Write-Host "      Repo 补全为 $Repo" }
+$owner, $name = $Repo.Split('/', 2)
 if ($owner -ne $me.login) { Write-Host "      目标属主 $owner 与 token 属主 $($me.login) 不同，组织仓需对应写权限" }
 
 Write-Host "[2/5] 创建/确认仓库 $Repo"
