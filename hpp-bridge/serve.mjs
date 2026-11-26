@@ -13,7 +13,22 @@
  */
 import http from 'node:http';
 import os from 'node:os';
-import worker from './dist/worker.mjs';
+import fs from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const JS = path.join(HERE, 'dist', 'worker.js');
+const MJS = path.join(HERE, 'dist', 'worker.mjs');
+
+if (!fs.existsSync(MJS)) {
+  if (!fs.existsSync(JS)) {
+    console.error('缺少 dist/worker.js，先执行：node build.mjs');
+    process.exit(1);
+  }
+  fs.copyFileSync(JS, MJS);
+}
+const { default: worker } = await import(pathToFileURL(MJS).href);
 
 const PORT = Number(process.env.PORT || 8787);
 
