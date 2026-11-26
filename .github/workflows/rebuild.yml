@@ -1,0 +1,51 @@
+name: rebuild-tvbox-config
+
+on:
+  schedule:
+    # 每天 UTC 19:30 = 北京 03:30
+    - cron: '30 19 * * *'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'rebuild.js'
+      - '.github/workflows/rebuild.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Rebuild config
+        env:
+          CONC: '12'
+          TIMEOUT: '8000'
+          WORKER_HOST: ${{ vars.WORKER_HOST }}
+        run: node rebuild.js
+
+      - name: Commit changes
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add tvbox-config.json tvbox-config-full.json report.json
+          if [ -n "${{ vars.WORKER_HOST }}" ]; then git add tvbox-config-proxy.json; fi
+          if git diff --cached --quiet; then
+            echo "no change"
+          else
+            git commit -m "chore: rebuild $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

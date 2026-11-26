@@ -1,0 +1,13 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+
+# 本地调试产物（仓库只保留三份正式 config 与 report）
+merged.json
+alive-all.json
+filtered.json
+decoded.json
+sub.txt
+alive-report.json
+tvbox-sites.json
