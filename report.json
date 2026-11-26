@@ -1,5 +1,5 @@
 {
-  "built_at": "2026-11-26T03:52:22.733Z",
+  "built_at": "2026-11-26T04:20:27.493Z",
   "sources": [
     {
       "source": "hafrey1",
@@ -30,10 +30,15 @@
       "source": "hafrey1-jingjian",
       "total": 47,
       "added": 0
+    },
+    {
+      "source": "hghub-plugins",
+      "total": 0,
+      "added": 0
     }
   ],
   "merged": 83,
-  "alive": 55,
+  "alive": 54,
   "rows": [
     {
       "key": "iqiyizyapi.com",
@@ -41,7 +46,7 @@
       "api": "https://iqiyizyapi.com/api.php/provide/vod",
       "detail": "https://iqiyizyapi.com",
       "ok": true,
-      "total": 71396,
+      "total": 71424,
       "note": "ok"
     },
     {
@@ -59,7 +64,7 @@
       "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
       "detail": "https://mtzy.me",
       "ok": true,
-      "total": 153437,
+      "total": 153441,
       "note": "ok"
     },
     {
@@ -69,7 +74,7 @@
       "detail": "https://wolongzyw.com",
       "ok": false,
       "total": 0,
-      "note": "Unexpected token '<', \"<!-- 61639\"... is not valid JSON"
+      "note": "Unexpected token '<', \"<!-- 85739\"... is not valid JSON"
     },
     {
       "key": "ikunzy.com",
@@ -86,7 +91,7 @@
       "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
       "detail": "http://caiji.dyttzyapi.com",
       "ok": true,
-      "total": 85308,
+      "total": 85310,
       "note": "ok"
     },
     {
@@ -94,9 +99,9 @@
       "name": "🎬猫眼资源",
       "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "detail": "https://www.maoyanzy.com",
-      "ok": true,
-      "total": 34700,
-      "note": "ok"
+      "ok": false,
+      "total": 0,
+      "note": "timeout"
     },
     {
       "key": "cj.lzcaiji.com",
@@ -104,7 +109,7 @@
       "api": "https://cj.lzcaiji.com/api.php/provide/vod",
       "detail": "https://cj.lzcaiji.com",
       "ok": true,
-      "total": 165465,
+      "total": 165467,
       "note": "ok"
     },
     {
@@ -122,7 +127,7 @@
       "api": "https://jszyapi.com/api.php/provide/vod",
       "detail": "https://jszyapi.com",
       "ok": true,
-      "total": 117658,
+      "total": 117659,
       "note": "ok"
     },
     {
@@ -131,7 +136,7 @@
       "api": "https://www.mdzyapi.com/api.php/provide/vod",
       "detail": "https://www.moduzy.net",
       "ok": true,
-      "total": 92369,
+      "total": 92374,
       "note": "ok"
     },
     {
@@ -140,7 +145,7 @@
       "api": "https://api.ffzyapi.com/api.php/provide/vod",
       "detail": "https://cj.ffzyapi.com",
       "ok": true,
-      "total": 99292,
+      "total": 99293,
       "note": "ok"
     },
     {
@@ -149,7 +154,7 @@
       "api": "https://bfzyapi.com/api.php/provide/vod",
       "detail": "https://bfzy.tv",
       "ok": true,
-      "total": 173840,
+      "total": 173842,
       "note": "ok"
     },
     {
@@ -167,7 +172,7 @@
       "api": "https://api.wujinapi.me/api.php/provide/vod",
       "detail": "https://wujinzy.com",
       "ok": true,
-      "total": 125905,
+      "total": 125925,
       "note": "ok"
     },
     {
@@ -176,7 +181,7 @@
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
       "detail": "https://xinlangapi.com",
       "ok": true,
-      "total": 119356,
+      "total": 119357,
       "note": "ok"
     },
     {
@@ -194,7 +199,7 @@
       "api": "https://subocaiji.com/api.php/provide/vod",
       "detail": "https://www.subozy.com",
       "ok": true,
-      "total": 119250,
+      "total": 119251,
       "note": "ok"
     },
     {
@@ -203,7 +208,7 @@
       "api": "https://jinyingzy.com/api.php/provide/vod",
       "detail": "https://jinyingzy.com",
       "ok": true,
-      "total": 119311,
+      "total": 119312,
       "note": "ok"
     },
     {
@@ -230,7 +235,7 @@
       "api": "https://api.guangsuapi.com/api.php/provide/vod",
       "detail": "https://api.guangsuapi.com",
       "ok": true,
-      "total": 119325,
+      "total": 119326,
       "note": "ok"
     },
     {
@@ -239,7 +244,7 @@
       "api": "https://www.hongniuzy2.com/api.php/provide/vod",
       "detail": "https://www.hongniuzy.com",
       "ok": true,
-      "total": 118732,
+      "total": 118733,
       "note": "ok"
     },
     {
@@ -248,7 +253,7 @@
       "api": "https://caiji.moduapi.cc/api.php/provide/vod",
       "detail": "https://caiji.moduapi.cc",
       "ok": true,
-      "total": 92369,
+      "total": 92374,
       "note": "ok"
     },
     {
@@ -257,7 +262,7 @@
       "api": "https://cj.rycjapi.com/api.php/provide/vod",
       "detail": "https://www.ryzyw.com",
       "ok": true,
-      "total": 90741,
+      "total": 90743,
       "note": "ok"
     },
     {
@@ -266,7 +271,7 @@
       "api": "https://hhzyapi.com/api.php/provide/vod",
       "detail": "https://www.haohuazy.com",
       "ok": true,
-      "total": 118416,
+      "total": 118417,
       "note": "ok"
     },
     {
@@ -293,7 +298,7 @@
       "api": "https://cj.lziapi.com/api.php/provide/vod",
       "detail": "https://lzizy.net",
       "ok": true,
-      "total": 165465,
+      "total": 165467,
       "note": "ok"
     },
     {
@@ -311,7 +316,7 @@
       "api": "https://api.wujinapi.com/api.php/provide/vod",
       "detail": "https://wujinzy.com",
       "ok": true,
-      "total": 125905,
+      "total": 125925,
       "note": "ok"
     },
     {
@@ -329,7 +334,7 @@
       "api": "https://api.yzzy-api.com/inc/apijson.php",
       "detail": "https://1080zyk4.com",
       "ok": true,
-      "total": 110461,
+      "total": 110462,
       "note": "ok"
     },
     {
@@ -410,7 +415,7 @@
       "api": "https://apiyutu.com/api.php/provide/vod",
       "detail": "https://apiyutu.com",
       "ok": true,
-      "total": 228305,
+      "total": 228430,
       "note": "ok"
     },
     {
@@ -419,7 +424,7 @@
       "api": "http://fhapi9.com/api.php/provide/vod",
       "detail": "http://fhapi9.com",
       "ok": true,
-      "total": 239568,
+      "total": 239585,
       "note": "ok"
     },
     {
@@ -428,7 +433,7 @@
       "api": "https://apilsbzy1.com/api.php/provide/vod",
       "detail": "https://apilsbzy1.com",
       "ok": true,
-      "total": 228305,
+      "total": 228430,
       "note": "ok"
     },
     {
@@ -509,7 +514,7 @@
       "api": "https://shayuapi.com/api.php/provide/vod",
       "detail": "https://shayuapi.com",
       "ok": true,
-      "total": 291992,
+      "total": 292139,
       "note": "ok"
     },
     {
@@ -536,7 +541,7 @@
       "api": "https://www.heiliaozyapi.com/api.php/provide/vod",
       "detail": "https://heiliaozy.cc",
       "ok": true,
-      "total": 118630,
+      "total": 118670,
       "note": "ok"
     },
     {
@@ -672,7 +677,7 @@
       "detail": "https://collect.wolongzyw.com",
       "ok": false,
       "total": 0,
-      "note": "Unexpected token '<', \"<!-- 13485\"... is not valid JSON"
+      "note": "Unexpected token '<', \"<!-- 16645\"... is not valid JSON"
     },
     {
       "key": "zy.sh0o.cn",
@@ -689,7 +694,7 @@
       "api": "http://154.219.117.232:9981/jacloudapi.php/provide/vod",
       "detail": "http://154.219.117.232:9981",
       "ok": true,
-      "total": 65574,
+      "total": 65578,
       "note": "ok"
     },
     {

@@ -585,17 +585,6 @@
       "filterable": 0,
       "ext": "",
       "group": "影视"
-    },
-    {
-      "key": "cms_api_maoyanapi_top",
-      "name": "🎬猫眼资源",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
     }
   ],
   "lives": [],

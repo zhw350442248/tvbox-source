@@ -774,17 +774,6 @@
       "group": "影视"
     },
     {
-      "key": "cms_api_maoyanapi_top",
-      "name": "🎬猫眼资源",
-      "type": 1,
-      "api": "https://api.maoyanapi.top/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
-    },
-    {
       "key": "cms_caiji_dbzy5_com",
       "name": "🎬豆瓣资源",
       "type": 1,
@@ -800,6 +789,17 @@
       "name": "🎬卧龙资源",
       "type": 1,
       "api": "https://wolongzyw.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "cms_api_maoyanapi_top",
+      "name": "🎬猫眼资源",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
