@@ -1,4 +1,4 @@
-# 把本目录推送到 GitHub，并给出订阅地址
+﻿# 把本目录推送到 GitHub，并给出订阅地址
 # 用法:
 #   $env:GH_TOKEN='ghp_xxx'; .\push.ps1 -Repo 你的用户名/tvbox-source
 #   .\push.ps1 -Repo 你的用户名/tvbox-source -Token ghp_xxx -Private
@@ -76,7 +76,7 @@ try {
   git config core.autocrlf true
   $readme = Join-Path $dir 'README.md'
   if (Test-Path $readme) {
-    $txt = [IO.File]::ReadAllText($readme)
+    $txt = [IO.File]::ReadAllText($readme, [Text.Encoding]::UTF8)
     if ($txt -match 'GITHUB_USER') {
       [IO.File]::WriteAllText($readme, ($txt -replace 'GITHUB_USER', $owner), [Text.UTF8Encoding]::new($false))
       Write-Host "      README 订阅地址已替换为 $owner"
