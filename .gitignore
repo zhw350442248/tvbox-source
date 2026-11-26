@@ -21,3 +21,6 @@ c.json
 runs*.json
 commits.json
 remote-config.json
+
+# hpp-bridge 构建缓存
+hpp-bridge/.plugins-cache/

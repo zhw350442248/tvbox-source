@@ -8,6 +8,8 @@ on:
   push:
     paths:
       - 'rebuild.js'
+      - 'hghub-scan.js'
+      - 'net.js'
       - '.github/workflows/rebuild.yml'
 
 permissions:
@@ -35,6 +37,10 @@ jobs:
           CONC: '12'
           TIMEOUT: '8000'
           WORKER_HOST: ${{ vars.WORKER_HOST }}
+          # hghub-plugins 上游站点的苹果CMS探测（设 0 关闭）
+          HPP: '1'
+          HPP_CONC: '8'
+          HPP_TIMEOUT: '8000'
         run: node rebuild.js
 
       - name: Commit changes

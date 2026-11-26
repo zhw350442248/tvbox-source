@@ -1,0 +1,276 @@
+{
+  "spider": "",
+  "wallpaper": "",
+  "logo": "",
+  "sites": [
+    {
+      "key": "hpp_avtoday",
+      "name": "🔞avtoday",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=avtoday",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_hanime",
+      "name": "🔞Hanime1",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=hanime",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_hkdoll",
+      "name": "🔞玩偶姐姐",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=hkdoll",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_huangguo",
+      "name": "🔞黄果短剧",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=huangguo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_madou",
+      "name": "🔞麻豆社",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=madou",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_pornhub",
+      "name": "🔞Pornhub",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=pornhub",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_xhamster",
+      "name": "🔞xHamster",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=xhamster",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "hpp_4kav",
+      "name": "4k-av",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=4kav",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_anfuns",
+      "name": "anfuns",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=anfuns",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_aowu",
+      "name": "嗷呜动漫",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=aowu",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_apple",
+      "name": "小苹果",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=apple",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_duanjutt",
+      "name": "短剧天堂",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=duanjutt",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_hdmoli",
+      "name": "hdmoli",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=hdmoli",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_hjkk",
+      "name": "韩剧看看",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=hjkk",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_jdys",
+      "name": "绝对影视",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=jdys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_jpyy",
+      "name": "金牌影视",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=jpyy",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_saohuo",
+      "name": "烧火电影",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=saohuo",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_tiantian",
+      "name": "天天影视",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=tiantian",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_wwgz",
+      "name": "农民影视",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=wwgz",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_xiaohys",
+      "name": "小红影视",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=xiaohys",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "hpp_xingya",
+      "name": "星芽短剧",
+      "type": 1,
+      "api": "https://YOUR-WORKER.workers.dev/api.php/provide/vod?p=xingya",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    }
+  ],
+  "lives": [],
+  "rules": [],
+  "ads": [
+    "mimg.0c1q0l.cn",
+    "www.163.com"
+  ],
+  "flags": [
+    "youku",
+    "qq",
+    "iqiyi",
+    "qiyi",
+    "letv",
+    "sohu",
+    "mgtv",
+    "bilibili"
+  ],
+  "ijk": [
+    {
+      "group": "软解码",
+      "options": [
+        {
+          "category": 4,
+          "name": "mediacodec",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "doh": [
+    {
+      "name": "AliDNS",
+      "url": "https://dns.alidns.com/dns-query",
+      "ips": [
+        "223.5.5.5",
+        "223.6.6.6"
+      ]
+    }
+  ]
+}

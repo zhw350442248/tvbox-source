@@ -39,7 +39,7 @@ function proxyOf(u) {
   try { return new URL(p); } catch { return null; }
 }
 
-function viaProxy(target, timeout) {
+function viaProxy(target, timeout, ua) {
   const u = new URL(target);
   const proxy = proxyOf(target);
   const port = u.port || (u.protocol === 'https:' ? 443 : 80);
@@ -64,7 +64,7 @@ function viaProxy(target, timeout) {
       const onTls = () => {
         tlsSock.write(
           `GET ${u.pathname}${u.search} HTTP/1.1\r\nHost: ${u.hostname}\r\n` +
-          `User-Agent: okhttp/3.15\r\nAccept: */*\r\nAccept-Encoding: identity\r\nConnection: close\r\n\r\n`
+          `User-Agent: ${ua || 'okhttp/3.15'}\r\nAccept: */*\r\nAccept-Encoding: identity\r\nConnection: close\r\n\r\n`
         );
       };
       if (u.protocol === 'https:') {
@@ -90,12 +90,12 @@ function viaProxy(target, timeout) {
   });
 }
 
-async function requestText(target, timeout = 10000) {
-  if (proxyOf(target)) return viaProxy(target, timeout);
+async function requestText(target, timeout = 10000, ua = 'okhttp/3.15') {
+  if (proxyOf(target)) return viaProxy(target, timeout, ua);
   const mod = target.startsWith('https') ? require('https') : require('http');
   return new Promise((resolve, reject) => {
     const req = mod.get(target, {
-      headers: { 'User-Agent': 'okhttp/3.15', 'Accept': '*/*', 'Accept-Encoding': 'identity' },
+      headers: { 'User-Agent': ua, 'Accept': '*/*', 'Accept-Encoding': 'identity' },
       timeout,
       rejectUnauthorized: false,
     }, (res) => {

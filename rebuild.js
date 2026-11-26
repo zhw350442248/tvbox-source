@@ -11,6 +11,7 @@
  */
 const fs = require('fs');
 const { requestText } = require('./net');
+const { scanHpp } = require('./hghub-scan');
 
 const A = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 const CONC = Number(process.env.CONC || 8);
@@ -175,6 +176,30 @@ function writeJson(f, obj) {
   console.log('[1/3] 拉取并合并 LunaTV 源');
   const { merged, stat } = await fetchMerge();
   console.log(`  合并后 ${Object.keys(merged.api_site).length} 站（按主机去重）`);
+
+  if (process.env.HPP !== '0') {
+    console.log('[1b/3] 扫描 hghub-plugins 上游站点的苹果CMS接口');
+    try {
+      const { hits } = await scanHpp();
+      const seenHost = new Set(Object.values(merged.api_site).map((v) => normHost(v.api)));
+      let added = 0;
+      for (const h of hits) {
+        const host = normHost(h.api);
+        if (seenHost.has(host)) continue;
+        seenHost.add(host);
+        merged.api_site['hpp_' + h.id] = {
+          name: (h.mature ? '🔞' : '') + (h.name || h.id),
+          api: h.api,
+        };
+        added++;
+      }
+      stat.push({ source: 'hghub-plugins', total: hits.length, added });
+      console.log(`  HPP 命中 ${hits.length} 站，新增 ${added}`);
+    } catch (e) {
+      stat.push({ source: 'hghub-plugins', error: e.message });
+      console.log(`  HPP 扫描失败: ${e.message}`);
+    }
+  }
 
   console.log('[2/3] 逐站测活');
   const rows = await probeAll(merged);
