@@ -11,3 +11,13 @@ decoded.json
 sub.txt
 alive-report.json
 tvbox-sites.json
+
+# 本地调试临时文件
+repo-body.json
+wf.json
+wf2.json
+disp.json
+c.json
+runs*.json
+commits.json
+remote-config.json
