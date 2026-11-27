@@ -180,6 +180,17 @@
       "group": "🔞18+"
     },
     {
+      "key": "cms_hsckzy_xyz",
+      "name": "🔞黄色仓库",
+      "type": 1,
+      "api": "https://hsckzy.xyz/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
       "key": "cms_www_jingpinx_com",
       "name": "🔞精品资源",
       "type": 1,
@@ -217,6 +228,39 @@
       "name": "🔞麻豆视频",
       "type": 1,
       "api": "https://91md.me/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "cms_www_msnii_com",
+      "name": "🔞-美少女-",
+      "type": 1,
+      "api": "https://www.msnii.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "cms_www_pgxdy_com",
+      "name": "🔞-黄AVZY",
+      "type": 1,
+      "api": "https://www.pgxdy.com/api/json.php",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "🔞18+"
+    },
+    {
+      "key": "cms_www_kxgav_com",
+      "name": "🔞白嫖资源",
+      "type": 1,
+      "api": "https://www.kxgav.com/api/json.php",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -345,17 +389,6 @@
       "group": "影视"
     },
     {
-      "key": "cms_api_wujinapi_com",
-      "name": "🎬无尽影视",
-      "type": 1,
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
-    },
-    {
       "key": "cms_cj_yayazy_net",
       "name": "🎬鸭鸭资源",
       "type": 1,
@@ -371,17 +404,6 @@
       "name": "🎬新浪资源",
       "type": 1,
       "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
-    },
-    {
-      "key": "cms_api_guangsuapi_com",
-      "name": "🎬光速资源",
-      "type": 1,
-      "api": "https://api.guangsuapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -426,28 +448,6 @@
       "name": "🎬豪华资源",
       "type": 1,
       "api": "https://hhzyapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
-    },
-    {
-      "key": "cms_www_huyaapi_com",
-      "name": "🎬虎牙资源",
-      "type": 1,
-      "api": "https://www.huyaapi.com/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
-    },
-    {
-      "key": "cms_jszyapi_com",
-      "name": "🎬极速资源",
-      "type": 1,
-      "api": "https://jszyapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
@@ -580,6 +580,17 @@
       "name": "🎬U酷影视",
       "type": 1,
       "api": "https://api.ukuapi88.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
+      "key": "cms_api_maoyanapi_top",
+      "name": "🎬猫眼资源",
+      "type": 1,
+      "api": "https://api.maoyanapi.top/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
