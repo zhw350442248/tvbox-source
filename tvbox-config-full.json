@@ -532,6 +532,17 @@
       "group": "影视"
     },
     {
+      "key": "cms_api_wujinapi_com",
+      "name": "🎬无尽影视",
+      "type": 1,
+      "api": "https://api.wujinapi.com/api.php/provide/vod",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 0,
+      "ext": "",
+      "group": "影视"
+    },
+    {
       "key": "cms_cj_yayazy_net",
       "name": "🎬鸭鸭资源",
       "type": 1,
@@ -822,17 +833,6 @@
       "name": "🎬艾旦影视",
       "type": 1,
       "api": "https://pz.v88.qzz.io/?url=https://lovedan.net/api.php/provide/vod",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 0,
-      "ext": "",
-      "group": "影视"
-    },
-    {
-      "key": "cms_api_wujinapi_com",
-      "name": "🎬无尽影视",
-      "type": 1,
-      "api": "https://api.wujinapi.com/api.php/provide/vod",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 0,
